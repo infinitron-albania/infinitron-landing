@@ -1,3 +1,4 @@
+import { MotionConfig } from 'motion/react'
 import Hero from '../sections/Hero'
 import Introduction from '../sections/Introduction.tsx'
 import Mission from "../sections/Mission.tsx";
@@ -9,11 +10,19 @@ export default function Home() {
     return (
         <>
             <Hero />
-            <Introduction />
-            <Mission />
-            <Offer />
-            <Industries />
-            <ContactUs />
+            <MotionConfig reducedMotion="user">
+                <div className="relative">
+                    <div
+                        aria-hidden
+                        className="pointer-events-none absolute inset-0 bg-size-[32px_32px] mask-[linear-gradient(to_bottom,transparent,black_8%,black_92%,transparent)]"
+                    />
+                    <Introduction />
+                    <Mission />
+                    <Offer />
+                    <Industries />
+                    <ContactUs />
+                </div>
+            </MotionConfig>
         </>
     )
 }

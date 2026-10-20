@@ -1,11 +1,16 @@
 import type { ReactNode } from 'react'
 
-type Props = { id?: string; title?: string; children: ReactNode }
+type Props = { id?: string; title?: string; backdrop?: ReactNode; children: ReactNode }
 
-export default function Section({ id, title, children }: Props) {
+export default function Section({ id, title, backdrop, children }: Props) {
     return (
         <section id={id} className="relative px-6 py-40">
-            <div className="mx-auto max-w-7xl">
+            {backdrop && (
+                <div aria-hidden className="pointer-events-none absolute inset-0 overflow-x-clip">
+                    {backdrop}
+                </div>
+            )}
+            <div className="relative mx-auto max-w-7xl">
                 {title && (
                     <h2 className="mb-10 text-3xl font-bold md:text-5xl">{title}</h2>
                 )}
