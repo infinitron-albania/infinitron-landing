@@ -1,8 +1,8 @@
 import type {TeamMember} from "../types/types.ts";
 import {FaLinkedin} from "react-icons/fa6";
 import {FaEnvelope} from "react-icons/fa";
-import HeroRing from "./HeroRing.tsx";
 import circleAvatar from "../assets/avatar-circle.svg";
+import StaticHero from "./StaticHero.tsx";
 
 export default function TeamCard({ member } : { member: TeamMember }) {
     const links = [
@@ -13,7 +13,7 @@ export default function TeamCard({ member } : { member: TeamMember }) {
     return (
         <article className="flex h-full flex-col items-center rounded-3xl border border-white/10 bg-white/3 p-8 text-center transition-colors hover:border-brand/40">
             <div className="relative h-44 w-44">
-                <HeroRing circleLogo={circleAvatar}/>
+                <StaticHero circleLogo={circleAvatar} />
                 <img
                     src={member.photo}
                     alt={member.name}

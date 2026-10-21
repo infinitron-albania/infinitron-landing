@@ -1,13 +1,13 @@
 import { motion } from 'motion/react'
 import { hero } from '../content/al.ts'
-import HeroRing from "../components/HeroRing.tsx";
+import DynamicHero from "../components/DynamicHero.tsx";
 
 export default function Hero() {
     return (
         <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6">
             <div className="relative z-10 flex flex-col items-center text-center">
                 <div className="relative mb-10 h-56 w-56 md:h-72 md:w-72">
-                    <HeroRing />
+                    <DynamicHero />
                 </div>
                 <motion.h1
                     initial={{ opacity: 0, y: 20 }}
