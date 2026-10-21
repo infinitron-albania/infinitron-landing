@@ -5,7 +5,7 @@ import {team} from "../content/al.ts";
 
 export default function Team () {
     return (
-        <section className="relative overflow-hidden px-6 pb-28 pt-32">
+        <section className="relative overflow-hidden px-6 pb-28 pt-28">
             <div className="mx-auto max-w-6xl">
                 <Reveal className="text-center">
                     <h1 className="mt-6 font-bold uppercase tracking-wider text-5xl md:text-5xl">
