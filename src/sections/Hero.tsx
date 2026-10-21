@@ -26,14 +26,6 @@ export default function Hero() {
                 >
                     {hero.line1}
                 </motion.p>
-                <motion.p
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.5 }}
-                    className="mt-2 text-lg text-cyan-300 md:text-2xl"
-                >
-                    {hero.line2}
-                </motion.p>
             </div>
         </section>
     )
