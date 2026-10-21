@@ -99,7 +99,7 @@ export const contact = {
 }
 
 export const team = {
-    titleLine1: 'Njerëzit pas',
+    titleLine1: 'Ekipi i',
     titleLine2: 'Infinitron',
     intro:
         'Një ekip i përkushtuar, me pasion për teknologjinë, që punon së bashku për të ndërtuar zgjidhje inovative dhe me ndikim real.',
