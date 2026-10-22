@@ -37,7 +37,7 @@ export const en = {
         slogan: 'Business Before Technology',
     },
     offer : {
-        title: 'What We Offer',
+        title: 'What We Offer?',
         paragraphs: [
             'We develop and integrate technology around the way businesses operate. Our work begins with a clear understanding of the challenge and a practical view of what can be improved.',
         ],
@@ -76,7 +76,7 @@ export const en = {
         ],
     },
     industries : {
-        title: 'Who We Work With',
+        title: 'Who We Work With?',
         intro:
             'Our focus brings together businesses and institutions whose activities are closely connected. We look at the needs of each group and the opportunities to improve how they work with one another.',
         items: [

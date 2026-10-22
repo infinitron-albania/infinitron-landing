@@ -37,7 +37,7 @@ export const al = {
         slogan: 'Biznesi përpara teknologjisë',
     },
     offer : {
-        title: 'Çfarë ofrojmë',
+        title: 'Çfarë ofrojmë?',
         paragraphs: [
             'Zhvillojmë dhe integrojmë teknologji duke u mbështetur te mënyra si funksionon biznesi. Puna jonë nis me kuptimin e qartë të sfidës dhe me vlerësimin praktik të asaj që mund të përmirësohet.',
         ],
@@ -76,7 +76,7 @@ export const al = {
         ],
     },
     industries : {
-        title: 'Me kë bashkëpunojmë',
+        title: 'Me kë bashkëpunojmë?',
         intro:
             'Fokusi ynë bashkon biznese dhe institucione, aktivitetet e të cilave lidhen ngushtë me njëri-tjetrin. Shqyrtojmë nevojat e secilit grup dhe mundësitë për të përmirësuar bashkëpunimin mes tyre.',
         items: [
