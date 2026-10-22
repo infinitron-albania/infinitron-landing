@@ -1,8 +1,9 @@
 import { motion } from 'motion/react'
-import { hero } from '../content/al.ts'
+import { useLang } from '../i18n/useLang.ts'
 import DynamicHero from "../components/DynamicHero.tsx";
 
 export default function Hero() {
+    const { hero } = useLang().t
     return (
         <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6">
             <div className="relative z-10 flex flex-col items-center text-center">

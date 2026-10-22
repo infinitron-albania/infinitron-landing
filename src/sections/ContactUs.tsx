@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 import Reveal from '../components/Reveal'
 import Section from '../components/Section'
-import { contact } from '../content/al'
+import { useLang } from '../i18n/useLang.ts'
 
 export default function ContactUs() {
+    const { contact } = useLang().t
     return (
         <Section id="kontakt">
             <Reveal>
@@ -22,7 +23,7 @@ export default function ContactUs() {
 
                     <Reveal delay={0.45}>
                         <Link
-                            to="/kontakt"
+                            to="/contact"
                             className="relative mt-10 inline-block rounded-full bg-cyan-300 px-8 py-3 font-semibold text-slate-900 transition-transform hover:scale-105"
                         >
                             {contact.button}

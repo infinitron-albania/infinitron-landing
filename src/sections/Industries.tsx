@@ -1,8 +1,9 @@
 import Reveal from '../components/Reveal'
 import Section from '../components/Section'
-import { industries } from '../content/al'
+import { useLang } from '../i18n/useLang.ts'
 
 export default function Industries() {
+    const { industries } = useLang().t
     return (
         <Section id="industrite" title={industries.title}>
             <div className="grid items-center justify-between gap-12 md:grid-cols-2">

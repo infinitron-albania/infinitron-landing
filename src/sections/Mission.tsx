@@ -2,11 +2,12 @@ import { useRef } from 'react'
 import { motion, useReducedMotion, useScroll, useTransform } from 'motion/react'
 import Reveal from '../components/Reveal'
 import Section from '../components/Section'
-import { mission } from '../content/al'
+import { useLang } from '../i18n/useLang.ts'
 
 const outline = 'hidden md:block absolute inset-x-0 whitespace-nowrap text-center text-[min(3.5vw,5rem)] font-black uppercase leading-none text-transparent [-webkit-text-stroke:1px_rgba(103,232,249,0.18)]'
 
 export default function Mission() {
+    const { mission } = useLang().t
     const band = useRef<HTMLDivElement>(null)
     const shift = useReducedMotion() ? 0 : 12
     const { scrollYProgress } = useScroll({ target: band, offset: ['start end', 'end start'] })
@@ -48,11 +49,13 @@ export default function Mission() {
                         </p>
                     </Reveal>
 
-                    <Reveal delay={0.3}>
-                        <p className="text-xl leading-relaxed text-white/80 md:text-2xl">
-                            {mission.paragraphs[1]}
-                        </p>
-                    </Reveal>
+                    {mission.paragraphs.slice(1).map((p, i) => (
+                        <Reveal key={i} delay={0.3 + i * 0.15}>
+                            <p className="text-xl leading-relaxed text-white/80 md:text-2xl">
+                                {p}
+                            </p>
+                        </Reveal>
+                    ))}
                 </div>
             </div>
         </Section>

@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-import { nav } from '../content/al'
+import { useLang } from '../i18n/useLang.ts'
 
 export default function Navbar() {
+    const { nav, ui } = useLang().t
     const [scrolled, setScrolled] = useState(false)
     const { pathname } = useLocation()
     const [menu, setMenu] = useState({ pathname, open: false })
@@ -64,7 +65,7 @@ export default function Navbar() {
                             open: current.pathname === pathname ? !current.open : true,
                         }))
                     }
-                    aria-label="Menu"
+                    aria-label={ui.menu}
                     aria-expanded={open}
                 >
                     <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">

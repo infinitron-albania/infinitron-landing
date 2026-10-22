@@ -1,9 +1,10 @@
 import Reveal from "../components/Reveal.tsx";
 import TeamCard from "../components/TeamCard.tsx";
-import {team} from "../content/al.ts";
+import {useLang} from "../i18n/useLang.ts";
 
 
 export default function Team () {
+    const {team} = useLang().t
     return (
         <section className="relative overflow-hidden px-6 pb-28 pt-28">
             <div className="mx-auto max-w-6xl">

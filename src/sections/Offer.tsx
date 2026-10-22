@@ -3,10 +3,11 @@ import { motion, useScroll } from 'motion/react'
 import Parallax from '../components/Parallax'
 import Reveal from '../components/Reveal'
 import Section from '../components/Section'
-import { offer } from '../content/al'
+import { useLang } from '../i18n/useLang.ts'
 import circle from '../assets/circle-no-bg.svg'
 
 export default function Offer() {
+    const { offer } = useLang().t
     const timeline = useRef<HTMLDivElement>(null)
     const { scrollYProgress } = useScroll({ target: timeline, offset: ['start 75%', 'end 50%'] })
 
@@ -36,6 +37,17 @@ export default function Offer() {
                        Punim nga Dejv
                     </div>
                 </Reveal>
+            </div>
+
+            <div className="mt-16 grid gap-6 md:grid-cols-3">
+                {offer.services.map((service, i) => (
+                    <Reveal key={service.title} delay={i * 0.15} className="h-full">
+                        <article className="flex h-full flex-col rounded-3xl border border-white/10 bg-white/5 p-8">
+                            <h3 className="text-2xl font-semibold">{service.title}</h3>
+                            <p className="mt-4 leading-relaxed text-white/70">{service.text}</p>
+                        </article>
+                    </Reveal>
+                ))}
             </div>
 
             <div className="mt-24">
