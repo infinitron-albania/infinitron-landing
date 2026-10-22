@@ -11,7 +11,7 @@ export default function TeamCard({ member } : { member: TeamMember }) {
     ].filter((m) => m.href)
 
     return (
-        <article className="flex h-full flex-col items-center rounded-3xl border border-white/10 bg-white/3 p-8 text-center transition-colors hover:border-brand/40">
+        <article className="flex h-full flex-col items-center rounded-3xl border border-white/10 bg-white/3 p-8 text-center transition-colors">
             <div className="relative h-44 w-44">
                 <StaticHero circleLogo={circleAvatar} />
                 <img
