@@ -29,10 +29,6 @@ export default function Navbar() {
             }`}
         >
             <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
-                {/*<Link to="/" aria-label="Infinitron">
-                    <img src={logo} alt="Infinitron" className="h-9 w-auto"/>
-                </Link>*/}
-
                 <Link to="/" aria-label="Infinitron">
                     <span className="text-white font-bold tracking-wide">INFINITRON</span>
                 </Link>

@@ -11,7 +11,7 @@ export default function Home() {
         <>
             <Hero />
             <MotionConfig reducedMotion="user">
-                <div className="relative">
+                <div className="relative overflow-x-clip">
                     <div
                         aria-hidden
                         className="pointer-events-none absolute inset-0 bg-size-[32px_32px] mask-[linear-gradient(to_bottom,transparent,black_8%,black_92%,transparent)]"

@@ -3,6 +3,7 @@ import { motion, useReducedMotion, useScroll, useTransform } from 'motion/react'
 import Reveal from '../components/Reveal'
 import Section from '../components/Section'
 import { useLang } from '../i18n/useLang.ts'
+import missionBackground from '../assets/mission_background.png'
 
 const outline = 'hidden md:block absolute inset-x-0 whitespace-nowrap text-center text-[min(3.5vw,5rem)] font-black uppercase leading-none text-transparent [-webkit-text-stroke:1px_rgba(103,232,249,0.18)]'
 
@@ -17,23 +18,27 @@ export default function Mission() {
     return (
         <Section
             id="misioni"
-            title={mission.title}
             backdrop={
-                <div ref={band} className="absolute inset-0">
-                    <motion.p style={{ x: forward }} className={`${outline} top-16`}>
-                        {mission.slogan}
-                    </motion.p>
-                    <motion.p style={{ x: backward }} className={`${outline} bottom-16`}>
-                        {mission.slogan}
-                    </motion.p>
-                </div>
+                <>
+                    <img
+                        src={missionBackground}
+                        alt=""
+                        className="absolute inset-0 h-full w-full object-cover mask-[linear-gradient(to_bottom,transparent,black_40%,black_50%,transparent)]"
+                    />
+                    <div ref={band} className="absolute inset-0">
+                        <motion.p style={{ x: forward }} className={`${outline} top-16`}>
+                            {mission.slogan}
+                        </motion.p>
+                        <motion.p style={{ x: backward }} className={`${outline} bottom-16`}>
+                            {mission.slogan}
+                        </motion.p>
+                    </div>
+                </>
             }
         >
             <div className="grid items-center gap-12 md:grid-cols-2">
-                <Reveal className="hidden md:block">
-                    <div className="flex aspect-square w-full items-center justify-center rounded-3xl border border-dashed border-white/20 text-sm text-white/40">
-                        Punimi nga Dejv?
-                    </div>
+                <Reveal>
+                    <h2 className="text-3xl font-bold md:text-5xl">{mission.title}</h2>
                 </Reveal>
 
                 <div className="space-y-8">

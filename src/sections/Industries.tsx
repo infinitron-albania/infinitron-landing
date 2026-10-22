@@ -1,6 +1,11 @@
 import Reveal from '../components/Reveal'
 import Section from '../components/Section'
 import { useLang } from '../i18n/useLang.ts'
+import supplierIcon from '../assets/supplier_icon.svg'
+import merchantIcon from '../assets/merchant_icon.svg'
+import bankIcon from '../assets/bank_icon.svg'
+
+const icons = [supplierIcon, merchantIcon, bankIcon]
 
 export default function Industries() {
     const { industries } = useLang().t
@@ -13,11 +18,6 @@ export default function Industries() {
                     </p>
                 </Reveal>
 
-                <Reveal delay={0.3} className="hidden md:block">
-                    <div className="flex aspect-square w-3/5 items-center justify-center rounded-3xl border border-dashed border-white/20 text-sm text-white/40">
-                        Punim nga Dejv
-                    </div>
-                </Reveal>
             </div>
 
 
@@ -25,8 +25,8 @@ export default function Industries() {
                 {industries.items.map((item, i) => (
                     <Reveal key={item.title} delay={i * 0.15} className="h-full">
                         <article className="flex h-full flex-col rounded-3xl border border-white/10 bg-white/5 p-8 transition-colors">
-                            <div className="mb-8 flex h-28 items-center justify-center rounded-2xl border border-dashed border-white/20 text-xs text-white/40">
-                                Logo
+                            <div className="mb-8 flex h-28 items-center justify-center">
+                                <img src={icons[i]} alt="" className="h-full w-auto object-contain" />
                             </div>
 
                             <h3 className="text-2xl font-semibold">{item.title}</h3>

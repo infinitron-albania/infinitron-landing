@@ -5,6 +5,8 @@ import Reveal from '../components/Reveal'
 import Section from '../components/Section'
 import { useLang } from '../i18n/useLang.ts'
 import circle from '../assets/circle-no-bg.svg'
+import arrowIcon from '../assets/arrow.svg'
+import offerBackground from '../assets/offer_background.png'
 
 export default function Offer() {
     const { offer } = useLang().t
@@ -33,9 +35,7 @@ export default function Offer() {
                 </div>
 
                 <Reveal delay={0.3} className="hidden md:block">
-                    <div className="flex aspect-square w-full items-center justify-center rounded-3xl border border-dashed border-white/20 text-sm text-white/40">
-                       Punim nga Dejv
-                    </div>
+                    <img alt='arrow' src={arrowIcon} className='h-full w-full object-cover object-center' />
                 </Reveal>
             </div>
 
@@ -50,8 +50,16 @@ export default function Offer() {
                 ))}
             </div>
 
-            <div className="mt-24">
-                <Reveal>
+            <div className="relative mt-4 -mb-24">
+                <div aria-hidden className="pointer-events-none absolute inset-y-0 left-1/2 w-screen -translate-x-1/2">
+                    <img
+                        src={offerBackground}
+                        alt=""
+                        className="h-full w-full object-cover mask-[linear-gradient(to_bottom,transparent,black_40%,black_50%,transparent)]"
+                    />
+                </div>
+
+                <Reveal className="relative mt-24">
                     <h3 className="mb-12 text-2xl font-bold text-cyan-300 md:text-4xl">
                         {offer.philosophyTitle}
                     </h3>

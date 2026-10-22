@@ -4,6 +4,7 @@ import Reveal from '../components/Reveal'
 import Section from '../components/Section'
 import { useLang } from '../i18n/useLang.ts'
 import circle from '../assets/circle-no-bg.svg'
+import neon_hub from '../assets/neon_nub.svg'
 
 export default function Introduction() {
     const { about } = useLang().t
@@ -11,7 +12,7 @@ export default function Introduction() {
         <Section
             id="rreth-nesh"
             backdrop={
-                <Parallax y={160} rotate={120} className="absolute -right-56 top-1/4 hidden md:block">
+                <Parallax y={160} rotate={120} className="absolute -left-56 top-1/4 hidden md:block">
                     <img src={circle} alt="" className="h-144 w-xl opacity-[0.07]" />
                 </Parallax>
             }
@@ -30,7 +31,7 @@ export default function Introduction() {
                         <div className="flex flex-wrap justify-center gap-4 pt-4 md:justify-start">
                             <a
                                 href="#cfare-ofrojme"
-                                className="rounded-full bg-cyan-300 px-6 py-3 font-semibold text-slate-900 transition-transform hover:scale-105"
+                                className="rounded-full bg-cyan-300 px-6 py-3 font-semibold text-slate-900 transition-transform hover:scale-103"
                             >
                                 {about.actions.approach}
                             </a>
@@ -45,9 +46,7 @@ export default function Introduction() {
                 </div>
 
                 <Reveal delay={0.3} className="hidden md:block">
-                    <div className="flex aspect-square w-full items-center justify-center rounded-3xl border border-dashed border-white/20 text-sm text-white/40">
-                        Permbajtje grafike?
-                    </div>
+                    <img alt='neon_hub' src={neon_hub} className='h-full w-full object-cover' />
                 </Reveal>
             </div>
         </Section>
