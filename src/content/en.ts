@@ -162,9 +162,9 @@ export const en = {
             {
                 name: 'Stiven Gjinaj',
                 role: 'Software Developer',
-                bio: 'Më tërheq zhvillimi i softuerit dhe krijimi i zgjidhjeve digjitale që i kthejnë idetë në funksionalitete konkrete. Përvoja ime përfshin zhvillimin e platformave web full stack, si dhe punën me inteligjencën artificiale dhe analizën e të dhënave.\n' +
-                    'Në Infinitron, kontribuoj në projektimin dhe zhvillimin e platformës softuerike, nga arkitektura e sistemit dhe planifikimi i zgjidhjeve teknike, deri te shndërrimi i kërkesave të biznesit në funksionalitete praktike.\n' +
-                    'Për mua, një zgjidhje e mirë teknologjike duhet të jetë e menduar me kujdes, funksionale dhe e ndërtuar për t’iu përgjigjur nevojave reale të përdoruesve.\n',
+                bio: 'I am passionate about software development and creating digital solutions that turn ideas into practical functionality. My experience includes full-stack web platform development, as well as working with artificial intelligence and data analysis.\n' +
+                    'At Infinitron, I contribute to the design and development of the software platform, from system architecture and technical planning to turning business requirements into practical features.\n' +
+                    'To me, a good technology solution should be carefully designed, functional, and built to meet users’ real needs.\n',
                 photo: './team/stiven.png',
                 linkedin: '#',
                 email: 'stiven@infinitron.al',
