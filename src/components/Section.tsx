@@ -4,13 +4,13 @@ type Props = { id?: string; title?: string; backdrop?: ReactNode; children: Reac
 
 export default function Section({ id, title, backdrop, children }: Props) {
     return (
-        <section id={id} className="relative px-6 py-40">
+        <section id={id} className="relative px-4 py-40">
             {backdrop && (
                 <div aria-hidden className="pointer-events-none absolute inset-0 overflow-x-clip">
                     {backdrop}
                 </div>
             )}
-            <div className="relative mx-auto max-w-7xl">
+            <div className="relative mx-auto max-w-5/6">
                 {title && (
                     <h2 className="mb-10 text-3xl font-bold md:text-5xl">{title}</h2>
                 )}

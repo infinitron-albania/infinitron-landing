@@ -29,7 +29,7 @@ export default function Industries() {
                                 <img src={icons[i]} alt="" loading="lazy" decoding="async" className="h-full w-auto object-contain" />
                             </div>
 
-                            <h3 className="text-2xl font-semibold">{item.title}</h3>
+                            <h3 className="text-xl md:text-2xl font-semibold text-center md:text-left">{item.title}</h3>
                             <p className="mt-4 leading-relaxed text-white/70">{item.text}</p>
                         </article>
                     </Reveal>
