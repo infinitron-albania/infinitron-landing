@@ -7,6 +7,7 @@ import {
     ringViewBox,
 } from './ringArt'
 import SpinLayer from './SpinLayer'
+import Reveal from "./Reveal.tsx";
 
 type Props = {
     outer?: ReactNode
@@ -41,35 +42,37 @@ export default function DynamicHero({
     const direction: 1 | -1 = reverse ? -1 : 1
 
     return (
-        <svg
-            viewBox={viewBox}
-            fill={color}
-            aria-hidden="true"
-            className={`h-full w-full ${className}`}
-        >
-            <SpinLayer
-                direction={direction}
-                slowDuration={outerDuration}
-                splash={splash}
-                splashTurns={1}
-                splashDuration={splashDuration}
-                center={center}
+        <Reveal>
+            <svg
+                viewBox={viewBox}
+                fill={color}
+                aria-hidden="true"
+                className={`h-full w-full ${className}`}
             >
-                {outer}
-            </SpinLayer>
+                <SpinLayer
+                    direction={direction}
+                    slowDuration={outerDuration}
+                    splash={splash}
+                    splashTurns={1}
+                    splashDuration={splashDuration}
+                    center={center}
+                >
+                    {outer}
+                </SpinLayer>
 
-            <SpinLayer
-                direction={(-direction) as 1 | -1}
-                slowDuration={innerDuration}
-                splash={splash}
-                splashTurns={1.5}
-                splashDuration={splashDuration}
-                center={center}
-            >
-                {inner}
-            </SpinLayer>
+                <SpinLayer
+                    direction={(-direction) as 1 | -1}
+                    slowDuration={innerDuration}
+                    splash={splash}
+                    splashTurns={1.5}
+                    splashDuration={splashDuration}
+                    center={center}
+                >
+                    {inner}
+                </SpinLayer>
 
-            {still}
-        </svg>
+                {still}
+            </svg>
+        </Reveal>
     )
 }
