@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { useLang } from '../i18n/useLang.ts'
+import infinitron_icon from "../assets/infinitron_icon.svg";
 
 export default function Navbar() {
     const { nav, ui } = useLang().t
@@ -30,7 +31,7 @@ export default function Navbar() {
         >
             <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
                 <Link to="/" aria-label="Infinitron">
-                    <span className="text-white font-bold tracking-wide">INFINITRON</span>
+                    <img src={infinitron_icon} alt="Infinitron" className="block h-auto w-40 max-w-full" />
                 </Link>
 
                 {/* desktop */}
