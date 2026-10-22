@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import Reveal from '../components/Reveal'
 import Section from '../components/Section'
 import { useLang } from '../i18n/useLang.ts'
@@ -22,12 +21,12 @@ export default function ContactUs() {
                     </Reveal>
 
                     <Reveal delay={0.45}>
-                        <Link
-                            to="/contact"
-                            className="relative mt-10 inline-block rounded-full bg-cyan-300 px-8 py-3 font-semibold text-slate-900 transition-transform hover:scale-105"
+                        <a
+                            href={`tel:${contact.phoneHref}`}
+                            className="relative mt-10 inline-flex items-center gap-3 rounded-full bg-cyan-300 px-8 py-3 font-semibold text-slate-900 transition-transform hover:scale-105 active:scale-95"
                         >
-                            {contact.button}
-                        </Link>
+                            {contact.callLabel}: {contact.phone}
+                        </a>
                     </Reveal>
                 </div>
             </Reveal>
