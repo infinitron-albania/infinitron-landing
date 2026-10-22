@@ -1,4 +1,6 @@
-import type {TeamMember} from "../types/types.ts";
+import type {ContactType, TeamMember} from "../types/types.ts";
+import {FaEnvelope, FaPhone} from "react-icons/fa";
+import {FaLocationDot} from "react-icons/fa6";
 
 
 export const en = {
@@ -110,6 +112,26 @@ export const en = {
         phone: '069 606 9500',
         phoneHref: '+355696069500',
         callLabel: 'Call Us',
+        contactTypes: [
+            {
+                title: 'Email',
+                recap: 'info@infinitron.al',
+                description: 'Write to us with any question or request',
+                icon: FaEnvelope,
+            },
+            {
+                title: 'Address',
+                recap: 'Tirana, Albania',
+                description: 'We are at the heart of innovation and technology',
+                icon: FaLocationDot,
+            },
+            {
+                title: 'Phone',
+                recap: '+355 69 606 9500',
+                description: 'Call us',
+                icon: FaPhone,
+            },
+        ] as ContactType[],
     },
     team : {
         titleLine1: 'Ekipi i',
