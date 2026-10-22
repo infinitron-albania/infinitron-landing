@@ -3,7 +3,7 @@ import { motion, useReducedMotion, useScroll, useTransform } from 'motion/react'
 import Reveal from '../components/Reveal'
 import Section from '../components/Section'
 import { useLang } from '../i18n/useLang.ts'
-import missionBackground from '../assets/mission_background.png'
+import missionBackground from '../assets/mission_background.webp'
 
 const outline = 'hidden md:block absolute inset-x-0 whitespace-nowrap text-center text-[min(3.5vw,5rem)] font-black uppercase leading-none text-transparent [-webkit-text-stroke:1px_rgba(103,232,249,0.18)]'
 
@@ -23,6 +23,7 @@ export default function Mission() {
                     <img
                         src={missionBackground}
                         alt=""
+                        loading="lazy" decoding="async"
                         className="absolute inset-0 h-full w-full object-cover mask-[linear-gradient(to_bottom,transparent,black_40%,black_50%,transparent)]"
                     />
                     <div ref={band} className="absolute inset-0">

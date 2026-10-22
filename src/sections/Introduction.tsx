@@ -4,7 +4,7 @@ import Reveal from '../components/Reveal'
 import Section from '../components/Section'
 import { useLang } from '../i18n/useLang.ts'
 import circle from '../assets/circle-no-bg.svg'
-import neon_hub from '../assets/neon_nub.svg'
+import neon_hub from '../assets/neon_nub.webp'
 
 export default function Introduction() {
     const { about } = useLang().t
@@ -13,20 +13,26 @@ export default function Introduction() {
             id="rreth-nesh"
             backdrop={
                 <Parallax y={160} rotate={120} className="absolute -left-56 top-1/4 hidden md:block">
-                    <img src={circle} alt="" className="h-144 w-xl opacity-[0.07]" />
+                    <img src={circle} alt="" loading="lazy" decoding="async" className="h-144 w-xl opacity-[0.07]" />
                 </Parallax>
             }
         >
+            <Reveal>
+                <h1 className="mb-15 md:max-w-6xl text-center text-3xl font-bold leading-snug text-white/80 md:text-center md:text-4xl">{about.lead}</h1>
+            </Reveal>
+
             <div className="grid items-center gap-12 md:grid-cols-2">
                 <div className="space-y-4 text-center md:text-left">
-                    <h1 className="text-white/80 font-bold leading-snug text-3xl md:text-4xl">{about.lead}</h1>
-                    {about.paragraphs.map((p, i) => (
-                        <Reveal key={i} delay={i * 0.15}>
-                            <p className="text-xl leading-relaxed text-white/80 md:text-2xl">
-                                {p}
-                            </p>
-                        </Reveal>
-                    ))}
+                    <Reveal>
+                        <p className="text-xl leading-relaxed text-white/80 md:text-2xl">
+                            {about.paragraphs[0]}
+                        </p>
+                    </Reveal>
+                    <Reveal>
+                        <p className="text-xl leading-relaxed text-white/80 md:text-2xl">
+                            {about.paragraphs[1]}
+                        </p>
+                    </Reveal>
                     <Reveal delay={0.3}>
                         <div className="flex flex-wrap justify-center gap-4 pt-4 md:justify-start">
                             <a
@@ -46,7 +52,7 @@ export default function Introduction() {
                 </div>
 
                 <Reveal delay={0.3} className="hidden md:block">
-                    <img alt='neon_hub' src={neon_hub} className='h-full w-full object-cover' />
+                    <img alt='neon_hub' src={neon_hub} width={1240} height={930} loading="lazy" decoding="async" className='h-full w-full object-cover' />
                 </Reveal>
             </div>
         </Section>

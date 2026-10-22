@@ -26,7 +26,7 @@ export default function Industries() {
                     <Reveal key={item.title} delay={i * 0.15} className="h-full">
                         <article className="flex h-full flex-col rounded-3xl border border-white/10 bg-white/5 p-8 transition-colors">
                             <div className="mb-8 flex h-28 items-center justify-center">
-                                <img src={icons[i]} alt="" className="h-full w-auto object-contain" />
+                                <img src={icons[i]} alt="" loading="lazy" decoding="async" className="h-full w-auto object-contain" />
                             </div>
 
                             <h3 className="text-2xl font-semibold">{item.title}</h3>

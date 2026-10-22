@@ -6,7 +6,7 @@ import Section from '../components/Section'
 import { useLang } from '../i18n/useLang.ts'
 import circle from '../assets/circle-no-bg.svg'
 import arrowIcon from '../assets/arrow.svg'
-import offerBackground from '../assets/offer_background.png'
+import offerBackground from '../assets/offer_background.webp'
 
 export default function Offer() {
     const { offer } = useLang().t
@@ -19,7 +19,7 @@ export default function Offer() {
             title={offer.title}
             backdrop={
                 <Parallax y={140} rotate={-90} className="absolute -right-40 bottom-24 hidden md:block">
-                    <img src={circle} alt="" className="h-96 w-96 opacity-[0.06]" />
+                    <img src={circle} alt="" loading="lazy" decoding="async" className="h-96 w-96 opacity-[0.06]" />
                 </Parallax>
             }
         >
@@ -35,7 +35,7 @@ export default function Offer() {
                 </div>
 
                 <Reveal delay={0.3} className="hidden md:block">
-                    <img alt='arrow' src={arrowIcon} className='h-full w-full object-cover object-center' />
+                    <img alt='arrow' src={arrowIcon} width={1427} height={611} loading="lazy" decoding="async" className='h-full w-full object-cover object-center' />
                 </Reveal>
             </div>
 
@@ -55,6 +55,7 @@ export default function Offer() {
                     <img
                         src={offerBackground}
                         alt=""
+                        loading="lazy" decoding="async"
                         className="h-full w-full object-cover mask-[linear-gradient(to_bottom,transparent,black_40%,black_50%,transparent)]"
                     />
                 </div>

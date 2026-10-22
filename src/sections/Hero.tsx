@@ -18,7 +18,7 @@ export default function Hero() {
                     transition={{ duration: 0.8 }}
                     className="text-4xl text-white font-bold tracking-[0.25em] md:text-7xl"
                 >
-                    <img src={infinitron_icon} alt="Infinitron" className="block h-auto w-72 max-w-full md:w-xl" />
+                    <img src={infinitron_icon} alt="Infinitron" width={5373} height={1502} className="block h-auto w-72 max-w-full md:w-xl" />
                 </motion.h1>
 
                 <motion.p

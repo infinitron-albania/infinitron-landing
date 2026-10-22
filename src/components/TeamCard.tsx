@@ -17,6 +17,7 @@ export default function TeamCard({ member } : { member: TeamMember }) {
                 <img
                     src={member.photo}
                     alt={member.name}
+                    loading="lazy" decoding="async"
                     className="absolute left-1/2 top-1/2 h-[57%] w-[57%] -translate-x-1/2 -translate-y-1/2 rounded-full object-cover"
                 />
             </div>
