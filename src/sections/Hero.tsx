@@ -1,6 +1,7 @@
 import { motion } from 'motion/react'
 import { useLang } from '../i18n/useLang.ts'
 import DynamicHero from "../components/DynamicHero.tsx";
+import infinitron_icon from '../assets/infinitron_icon.svg';
 
 export default function Hero() {
     const { hero } = useLang().t
@@ -12,18 +13,20 @@ export default function Hero() {
                 </div>
                 <motion.h1
                     initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: false }}
                     transition={{ duration: 0.8 }}
                     className="text-4xl text-white font-bold tracking-[0.25em] md:text-7xl"
                 >
-                    {hero.title}
+                    <img src={infinitron_icon} alt="Infinitron" className="block h-auto w-72 max-w-full md:w-xl" />
                 </motion.h1>
 
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: false }}
                     transition={{ duration: 0.8, delay: 0.3 }}
-                    className="mt-6 text-lg text-white/80 md:text-2xl"
+                    className="text-lg text-white/80 md:text-2xl"
                 >
                     {hero.line1}
                 </motion.p>

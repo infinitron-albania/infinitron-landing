@@ -76,7 +76,7 @@ export default function Offer() {
                                 <motion.span
                                     initial={{ scale: 0.5, opacity: 0 }}
                                     whileInView={{ scale: 1, opacity: 1 }}
-                                    viewport={{ once: true, margin: '0px 0px -20% 0px' }}
+                                    viewport={{ once: false, margin: '0px 0px -20% 0px' }}
                                     transition={{ type: 'spring', stiffness: 260, damping: 18 }}
                                     className="absolute -left-15 top-0 flex h-10 w-10 items-center justify-center rounded-full border border-cyan-400/60 bg-slate-950 text-sm font-semibold text-cyan-300 shadow-[0_0_20px_rgba(34,211,238,0.35)]"
                                 >
