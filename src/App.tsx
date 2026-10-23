@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar.tsx";
 import Team from "./pages/Team.tsx";
 import Projects from "./pages/Projects.tsx";
 import Contact from "./pages/Contact.tsx";
+import NotFound from "./pages/NotFound.tsx";
 import LanguageSwitch from "./components/LanguageSwitch.tsx";
 
 function Layout() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
   )

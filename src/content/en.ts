@@ -193,7 +193,12 @@ export const en = {
             small: 'Së bashku për',
             big: 'Një të ardhme më të mirë',
         },
-    }
+    },
+    notFound: {
+        title: 'Page not found',
+        text: 'The page you are looking for does not exist or has been moved.',
+        back: 'Back to home',
+    },
 }
 
 export type Content = typeof en

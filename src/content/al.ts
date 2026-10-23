@@ -193,7 +193,12 @@ export const al = {
             small: 'Së bashku për',
             big: 'Një të ardhme më të mirë',
         },
-    }
+    },
+    notFound: {
+        title: 'Faqja nuk u gjet',
+        text: 'Faqja që po kërkoni nuk ekziston ose është zhvendosur.',
+        back: 'Kthehu në faqen kryesore',
+    },
 }
 
 export type Content = typeof al
