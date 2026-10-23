@@ -18,7 +18,7 @@ export default function Introduction() {
             }
         >
             <Reveal>
-                <h1 className="mb-15 md:max-w-6xl text-center text-3xl font-bold leading-snug text-white/80 md:text-center md:text-4xl">{about.lead}</h1>
+                <h1 className="mb-20 md:max-w-7xl text-center text-xl font-bold leading-snug text-white/80 md:text-center md:text-2xl font-bristone">{about.lead}</h1>
             </Reveal>
 
             <div className="grid items-center gap-12 md:grid-cols-2">

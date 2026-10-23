@@ -11,7 +11,7 @@ export default function ContactUs() {
                     <div className="pointer-events-none absolute left-1/2 top-0 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full" />
 
                     <Reveal>
-                        <h2 className="relative text-3xl font-bold md:text-5xl">{contact.title}</h2>
+                        <h2 className="relative text-3xl font-bold md:text-5xl font-bristone">{contact.title}</h2>
                     </Reveal>
                     <Reveal delay={0.15}>
                         <p className="relative mt-6 text-xl text-cyan-300 md:text-2xl">{contact.tagline}</p>
@@ -22,10 +22,10 @@ export default function ContactUs() {
 
                     <Reveal delay={0.45}>
                         <a
-                            href={`tel:${contact.phoneHref}`}
+                            href={'/contact'}
                             className="relative mt-10 inline-flex items-center gap-3 rounded-full bg-cyan-300 px-8 py-3 font-semibold text-slate-900 transition-transform hover:scale-105 active:scale-95"
                         >
-                            {contact.callLabel}: {contact.phone}
+                            {contact.button}
                         </a>
                     </Reveal>
                 </div>

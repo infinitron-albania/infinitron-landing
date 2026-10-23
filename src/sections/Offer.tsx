@@ -5,8 +5,12 @@ import Reveal from '../components/Reveal'
 import Section from '../components/Section'
 import { useLang } from '../i18n/useLang.ts'
 import circle from '../assets/circle-no-bg.svg'
-import arrowIcon from '../assets/arrow.svg'
 import offerBackground from '../assets/offer_background.webp'
+import business_collaboration_icon from '../assets/business_collaboration_icon.webp'
+import digital_solution_icon from '../assets/digital_solution_icon.webp'
+import process_improvement_icon from '../assets/process_improvement_icon.webp'
+
+const icons = [process_improvement_icon, digital_solution_icon, business_collaboration_icon]
 
 export default function Offer() {
     const { offer } = useLang().t
@@ -33,16 +37,13 @@ export default function Offer() {
                         </Reveal>
                     ))}
                 </div>
-
-                <Reveal delay={0.3} className="hidden md:block">
-                    <img alt='arrow' src={arrowIcon} width={1427} height={611} loading="lazy" decoding="async" className='h-full w-full object-cover object-center' />
-                </Reveal>
             </div>
 
             <div className="mt-16 grid gap-6 md:grid-cols-3">
                 {offer.services.map((service, i) => (
                     <Reveal key={service.title} delay={i * 0.15} className="h-full">
                         <article className="flex h-full flex-col rounded-3xl border border-white/10 bg-white/5 p-8">
+                            <img src={icons[i]} alt="" loading="lazy" decoding="async" className="aspect-6/5 w-full object-contain" />
                             <h3 className="text-2xl font-semibold">{service.title}</h3>
                             <p className="mt-4 leading-relaxed text-white/70">{service.text}</p>
                         </article>
@@ -61,7 +62,7 @@ export default function Offer() {
                 </div>
 
                 <Reveal className="relative mt-24">
-                    <h3 className="mb-12 text-2xl font-bold text-cyan-300 md:text-4xl">
+                    <h3 className="mb-12 text-2xl font-bold text-cyan-300 md:text-3xl font-bristone">
                         {offer.philosophyTitle}
                     </h3>
                 </Reveal>

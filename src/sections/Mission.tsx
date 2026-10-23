@@ -39,7 +39,7 @@ export default function Mission() {
         >
             <div className="grid items-center gap-12 md:grid-cols-2">
                 <Reveal>
-                    <h2 className="text-3xl font-bold md:text-5xl">{mission.title}</h2>
+                    <h2 className="text-2xl font-bold md:text-4xl font-bristone">{mission.title}</h2>
                 </Reveal>
 
                 <div className="space-y-8">
