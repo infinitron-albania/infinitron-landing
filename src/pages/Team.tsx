@@ -9,9 +9,9 @@ export default function Team () {
         <section className="relative overflow-hidden px-6 py-28">
             <div className="mx-auto max-w-6xl">
                 <Reveal className="text-center" reverse>
-                    <h1 className="mt-6 font-bold uppercase tracking-wider text-5xl md:text-5xl">
-                        {team.titleLine1}
-                        <span className="block text-brand">{team.titleLine2}</span>
+                    <h1 className="mt-6 font-bold uppercase tracking-wider text-3xl md:text-4xl font-bristone">
+                        {team.titleLine1 + ' ' + team.titleLine2}
+
                     </h1>
 
                     <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80 md:text-lg">

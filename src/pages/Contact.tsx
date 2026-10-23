@@ -10,12 +10,12 @@ export default function Contact () {
         <section className='relative overflow-hidden px-6 py-28'>
             <div className="relative max-w-7xl mx-auto">
                 <Reveal className="text-center" reverse={false}>
-                    <h1 className="font-light tracking-[.20em] text-3xl text-cyan-300">
+                    <h1 className="font-light tracking-[.20em] text-lg md:text-xl text-cyan-300 font-bristone">
                         {contact.title}
                     </h1>
                 </Reveal>
                 <Reveal className="text-center" delay={0.1} reverse={false}>
-                    <h2 className="mt-5 font-bold tracking-widest text-4xl text-white">
+                    <h2 className="mt-5 font-bold tracking-widest text-xl md:text-2xl text-white font-bristone">
                         {contact.tagline}
                     </h2>
                 </Reveal>
