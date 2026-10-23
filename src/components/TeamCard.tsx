@@ -10,7 +10,7 @@ export default function TeamCard({ member } : { member: TeamMember }) {
             <div className="relative h-44 w-44">
                 <StaticHero circleLogo={circleAvatar} />
                 <img
-                    src={member.photo}
+                    src={import.meta.env.BASE_URL + member.photo}
                     alt={member.name}
                     loading="lazy" decoding="async"
                     className="absolute left-1/2 top-1/2 h-[57%] w-[57%] -translate-x-1/2 -translate-y-1/2 rounded-full object-cover"
