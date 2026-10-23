@@ -7,6 +7,7 @@ import Portfolio from "./pages/Portfolio.tsx";
 import Contact from "./pages/Contact.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import LanguageSwitch from "./components/LanguageSwitch.tsx";
+import Footer from "./components/Footer.tsx";
 
 function Layout() {
   return (
@@ -15,6 +16,7 @@ function Layout() {
         <main>
           <Outlet />
         </main>
+        <Footer />
         <LanguageSwitch />
       </div>
   )

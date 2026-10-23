@@ -13,6 +13,7 @@ export const en = {
     ui : {
         menu: 'Menu',
         switchLanguage: 'Ndrysho gjuhën',
+        rightsReserved: 'All rights reserved.',
     },
     hero : {
         title: 'INFINITRON',
