@@ -121,7 +121,7 @@ export const al = {
             },
             {
                 title: 'Adresa',
-                recap: 'Tiranë, Shqiperi',
+                recap: 'Isa Boletini, Tiranë',
                 description: 'Jemi në zemër të inovacionit dhe teknologjisë',
                 icon: FaLocationDot,
             },

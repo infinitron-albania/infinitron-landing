@@ -121,7 +121,7 @@ export const en = {
             },
             {
                 title: 'Address',
-                recap: 'Tirana, Albania',
+                recap: 'Isa Boletini, Tirana',
                 description: 'We are at the heart of innovation and technology',
                 icon: FaLocationDot,
             },
@@ -134,10 +134,10 @@ export const en = {
         ] as ContactType[],
     },
     team : {
-        titleLine1: 'Ekipi i',
-        titleLine2: 'Infinitron',
+        titleLine1: 'Infinitron',
+        titleLine2: 'Team',
         intro:
-            'Një ekip i përkushtuar, me pasion për teknologjinë, që punon së bashku për të ndërtuar zgjidhje inovative dhe me ndikim real.',
+            'A dedicated team, passionate about technology, working together to build innovative solutions with real impact.',
         members: [
             {
                 name: 'Ervis Mance',
