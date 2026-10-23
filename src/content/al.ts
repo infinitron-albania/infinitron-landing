@@ -7,7 +7,7 @@ export const al = {
     nav : [
         {label: 'Home', link: '/'},
         {label: 'Ekipi', link: '/team'},
-        {label: 'Projektet', link: '/projects'},
+        {label: 'Portofoli', link: '/projects'},
         {label: 'Kontakt', link: '/contact'},
     ],
     ui : {

@@ -7,7 +7,7 @@ export const en = {
     nav : [
         {label: 'Home', link: '/'},
         {label: 'Team', link: '/team'},
-        {label: 'Projects', link: '/projects'},
+        {label: 'Portfolio', link: '/projects'},
         {label: 'Contact', link: '/contact'},
     ],
     ui : {
