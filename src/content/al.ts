@@ -146,8 +146,8 @@ export const al = {
                     'Me Infinitron, synoj të ndërtoj një kompani që i ndihmon bizneset të punojnë më me efikasitet, të përmirësojnë proceset dhe të shfrytëzojnë potencialin që ofron teknologjia.\n' +
                     'Për mua, suksesi nuk qëndron vetëm te zgjidhja që krijojmë, por te ndryshimi që ajo sjell në mënyrën se si funksionon një biznes.\n',
                 photo: '/images/team/ervis.webp',
-                linkedin: '#',
-                email: 'ervis@infinitron.al',
+                linkedin: 'https://www.linkedin.com/in/ervis-mance-77173018',
+                email: 'ervis.mance@infinitron.al',
             },
             {
                 name: 'Greta Allushi',
@@ -157,7 +157,7 @@ export const al = {
                     'Sepse një markë e fortë nuk dallohet vetëm nga ajo që ofron, por edhe nga mënyra se si komunikon dhe lidh njerëzit me vizionin e saj.\n',
                 photo: '/images/team/greta.webp',
                 linkedin: '#',
-                email: 'greta@infinitron.al',
+                email: 'greta.allushi@infinitron.al',
             },
             {
                 name: 'David Luka',
@@ -166,8 +166,8 @@ export const al = {
                     'Në punën time, ndërthur estetikën, strategjinë dhe funksionalitetin për të krijuar identitete vizuale dhe zgjidhje digjitale që i përgjigjen nevojave të përdoruesve.\n' +
                     'Rezultati që synoj është një teknologji që nuk është vetëm moderne në pamje, por edhe intuitive, e dobishme dhe e lehtë për t\'u përdorur.\n',
                 photo: '/images/team/dejv.webp',
-                linkedin: '#',
-                email: 'david@infinitron.al',
+                linkedin: 'https://www.linkedin.com/in/davidluka4',
+                email: 'david.luka@infinitron.al',
             },
             {
                 name: 'Stiven Gjinaj',
@@ -176,8 +176,8 @@ export const al = {
                     'Në Infinitron, kontribuoj në projektimin dhe zhvillimin e platformës softuerike, nga arkitektura e sistemit dhe planifikimi i zgjidhjeve teknike, deri te shndërrimi i kërkesave të biznesit në funksionalitete praktike.\n' +
                     'Për mua, një zgjidhje e mirë teknologjike duhet të jetë e menduar me kujdes, funksionale dhe e ndërtuar për t’iu përgjigjur nevojave reale të përdoruesve.\n',
                 photo: '/images/team/stiven.webp',
-                linkedin: '#',
-                email: 'stiven@infinitron.al',
+                linkedin: 'https://www.linkedin.com/in/stiven-gjinaj-835134161',
+                email: 'stiven.gjinaj@infinitron.al',
             },
             {
                 name: 'Lapo',
@@ -193,6 +193,11 @@ export const al = {
             small: 'Së bashku për',
             big: 'Një të ardhme më të mirë',
         },
+    },
+    portfolio: {
+        title: 'Së shpejti',
+        text: 'Portofolin ynë do të jetë gati së shpejti.',
+        back: 'Kthehu në faqen kryesore',
     },
     notFound: {
         title: 'Faqja nuk u gjet',

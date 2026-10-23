@@ -146,8 +146,8 @@ export const en = {
                     'With Infinitron, my goal is to build a company that helps businesses work more efficiently, improve their processes, and make the most of what technology has to offer.\n' +
                     'To me, success is not just about the solution we create, but the difference it makes to the way a business operates.',
                 photo: '/images/team/ervis.webp',
-                linkedin: '#',
-                email: 'ervis@infinitron.al',
+                linkedin: 'https://www.linkedin.com/in/ervis-mance-77173018',
+                email: 'ervis.mance@infinitron.al',
             },
             {
                 name: 'Greta Allushi',
@@ -157,7 +157,7 @@ export const en = {
                     'Because a strong brand is defined not only by what it offers, but also by how it communicates and connects people with its vision.',
                 photo: '/images/team/greta.webp',
                 linkedin: '#',
-                email: 'greta@infinitron.al',
+                email: 'greta.allushi@infinitron.al',
             },
             {
                 name: 'David Luka',
@@ -166,8 +166,8 @@ export const en = {
                     'In my work, I bring together aesthetics, strategy, and functionality to create visual identities and digital solutions that meet users’ needs.\n' +
                     'My aim is to create technology that is not only modern in appearance, but also intuitive, useful, and easy to use.',
                 photo: '/images/team/dejv.webp',
-                linkedin: '#',
-                email: 'david@infinitron.al',
+                linkedin: 'https://www.linkedin.com/in/davidluka4',
+                email: 'david.luka@infinitron.al',
             },
             {
                 name: 'Stiven Gjinaj',
@@ -176,8 +176,8 @@ export const en = {
                     'At Infinitron, I contribute to the design and development of the software platform, from system architecture and technical planning to turning business requirements into practical features.\n' +
                     'To me, a good technology solution should be carefully designed, functional, and built to meet users’ real needs.\n',
                 photo: '/images/team/stiven.webp',
-                linkedin: '#',
-                email: 'stiven@infinitron.al',
+                linkedin: 'https://www.linkedin.com/in/stiven-gjinaj-835134161',
+                email: 'stiven.gjinaj@infinitron.al',
             },
             {
                 name: 'Lapo',
@@ -193,6 +193,11 @@ export const en = {
             small: 'Së bashku për',
             big: 'Një të ardhme më të mirë',
         },
+    },
+    portfolio: {
+        title: 'Coming soon',
+        text: 'Our portfolio will soon be ready.',
+        back: 'Back to home',
     },
     notFound: {
         title: 'Page not found',
