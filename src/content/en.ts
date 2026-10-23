@@ -1,5 +1,5 @@
 import type {ContactType, TeamMember} from "../types/types.ts";
-import {FaEnvelope, FaPhone} from "react-icons/fa";
+import {FaEnvelope, FaPhoneAlt} from "react-icons/fa";
 import {FaLocationDot} from "react-icons/fa6";
 
 
@@ -129,7 +129,7 @@ export const en = {
                 title: 'Phone',
                 recap: '+355 69 606 9500',
                 description: 'Call us',
-                icon: FaPhone,
+                icon: FaPhoneAlt,
             },
         ] as ContactType[],
     },

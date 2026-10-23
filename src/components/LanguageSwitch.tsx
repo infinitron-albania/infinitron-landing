@@ -13,7 +13,7 @@ export default function LanguageSwitch() {
             className="fixed bottom-5 right-5 z-50 flex items-center gap-1.5 rounded-full border border-white/15 bg-slate-950/70 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-white/80 backdrop-blur-md transition-colors hover:border-brand/50 hover:text-white"
         >
             <FaGlobe size={14} />
-            {lang}
+            {lang == 'sq' ? 'AL' : 'EN'}
         </button>
     )
 }
