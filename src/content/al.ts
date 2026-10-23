@@ -156,7 +156,7 @@ export const al = {
                     'Në Infinitron, kujdesem që vizioni dhe zgjidhjet tona teknologjike të komunikohen në mënyrë të qartë, krijuese dhe të afërt me bizneset. Qëllimi im është të ndërtoj një komunikim që jo vetëm prezanton atë që bëjmë, por e bën të kuptueshme vlerën që sjellim.\n' +
                     'Sepse një markë e fortë nuk dallohet vetëm nga ajo që ofron, por edhe nga mënyra se si komunikon dhe lidh njerëzit me vizionin e saj.\n',
                 photo: '/images/team/greta.webp',
-                linkedin: '#',
+                linkedin: 'https://www.linkedin.com/in/greta-allushi-b96569446',
                 email: 'greta.allushi@infinitron.al',
             },
             {
@@ -196,7 +196,7 @@ export const al = {
     },
     portfolio: {
         title: 'Së shpejti',
-        text: 'Portofolin ynë do të jetë gati së shpejti.',
+        text: 'Portofoli ynë do të jetë gati së shpejti.',
         back: 'Kthehu në faqen kryesore',
     },
     notFound: {

@@ -156,7 +156,7 @@ export const en = {
                     'At Infinitron, I ensure that our vision and technology solutions are communicated clearly, creatively, and in a way that resonates with businesses. My goal is to build communication that not only presents what we do, but also makes the value we deliver easy to understand.\n' +
                     'Because a strong brand is defined not only by what it offers, but also by how it communicates and connects people with its vision.',
                 photo: '/images/team/greta.webp',
-                linkedin: '#',
+                linkedin: 'https://www.linkedin.com/in/greta-allushi-b96569446',
                 email: 'greta.allushi@infinitron.al',
             },
             {
