@@ -1,18 +1,13 @@
-name: Deploy to GitHub Pages
+name: CI / Deploy to Plesk
 
 on:
   push:
     branches: [main]
+  pull_request:
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: true
 
 jobs:
   build:
@@ -27,22 +22,42 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
+      - name: Lint
+        run: npm run lint
       - name: Build site
         run: npm run build
-      - name: Keep client-side routes working on GitHub Pages
-        run: cp dist/index.html dist/404.html
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Upload build
+        uses: actions/upload-artifact@v7
         with:
+          name: dist
           path: dist
+          include-hidden-files: true
+          retention-days: 7
 
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    # Only deploy from main, never from pull requests
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://infinitron.al
+    concurrency:
+      group: deploy-production
+      cancel-in-progress: false
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Download build
+        uses: actions/download-artifact@v8
+        with:
+          name: dist
+          path: dist
+      - name: Upload to Plesk over FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ${{ vars.FTP_PROTOCOL || 'ftps' }}
+          port: ${{ vars.FTP_PORT || 21 }}
+          local-dir: ./dist/
+          server-dir: ${{ vars.FTP_SERVER_DIR || '/httpdocs/' }}
