@@ -5,11 +5,6 @@ import circleAvatar from "../assets/avatar-circle.svg";
 import StaticHero from "./StaticHero.tsx";
 
 export default function TeamCard({ member } : { member: TeamMember }) {
-    const links = [
-        { href: member.linkedin, label: 'Linkedin', Icon: FaLinkedin },
-        { href: member.email, label: 'Email', Icon: FaEnvelope },
-    ].filter((m) => m.href)
-
     return (
         <article className="flex h-full flex-col items-center rounded-3xl border border-white/10 bg-white/3 p-8 text-center transition-colors">
             <div className="relative h-44 w-44">
@@ -27,18 +22,27 @@ export default function TeamCard({ member } : { member: TeamMember }) {
             <p className="mt-4 flex-1 leading-relaxed text-white/70">{member.bio}</p>
 
             <div className="flex gap-5 pt-6 text-brand">
-                {links.map(({ href, label, Icon }) => (
+                {member.linkedin && (
                     <a
-                        key={label}
-                        href={href}
-                        aria-label={`${member.name} – ${label}`}
-                        target={label === 'Email' ? undefined : '_blank'}
+                        href={member.linkedin}
+                        aria-label={`${member.name} – Linkedin`}
+                        target="_blank"
                         rel="noreferrer"
                         className="transition-transform hover:scale-110"
                     >
-                        <Icon size={20} />
+                        <FaLinkedin size={20} />
                     </a>
-                ))}
+                )}
+                {member.email && (
+                    <a
+                        href={`mailto:${member.email}`}
+                        aria-label={`${member.name} – Email`}
+                        title={member.email}
+                        className="transition-transform hover:scale-110"
+                    >
+                        <FaEnvelope size={20} />
+                    </a>
+                )}
             </div>
         </article>
     )
