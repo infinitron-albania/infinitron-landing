@@ -145,7 +145,7 @@ export const en = {
                 bio: 'My experience in entrepreneurship, business leadership, and the public sector has shown me that technology creates real value when it addresses practical challenges and opens new paths for growth.\n' +
                     'With Infinitron, my goal is to build a company that helps businesses work more efficiently, improve their processes, and make the most of what technology has to offer.\n' +
                     'To me, success is not just about the solution we create, but the difference it makes to the way a business operates.',
-                photo: './team/ervis.webp',
+                photo: '/images/team/ervis.webp',
                 linkedin: '#',
                 email: 'ervis@infinitron.al',
             },
@@ -155,7 +155,7 @@ export const en = {
                 bio: 'A good idea needs the right communication to be understood, build connections, and earn trust. My experience in media, public communication, and digital marketing has helped me understand how a message can become a distinctive identity.\n' +
                     'At Infinitron, I ensure that our vision and technology solutions are communicated clearly, creatively, and in a way that resonates with businesses. My goal is to build communication that not only presents what we do, but also makes the value we deliver easy to understand.\n' +
                     'Because a strong brand is defined not only by what it offers, but also by how it communicates and connects people with its vision.',
-                photo: './team/greta.webp',
+                photo: '/images/team/greta.webp',
                 linkedin: '#',
                 email: 'greta@infinitron.al',
             },
@@ -165,7 +165,7 @@ export const en = {
                 bio: 'Design is about more than visual appearance: it is how an idea becomes understandable and a digital experience feels intuitive. My academic background in Communication Management, with a focus on Branding, Advertising, and Public Relations at the University of Wrocław in Poland, along with academic experiences in Germany and Portugal, has shaped my creative approach.\n' +
                     'In my work, I bring together aesthetics, strategy, and functionality to create visual identities and digital solutions that meet users’ needs.\n' +
                     'My aim is to create technology that is not only modern in appearance, but also intuitive, useful, and easy to use.',
-                photo: './team/dejv.webp',
+                photo: '/images/team/dejv.webp',
                 linkedin: '#',
                 email: 'david@infinitron.al',
             },
@@ -175,7 +175,7 @@ export const en = {
                 bio: 'I am passionate about software development and creating digital solutions that turn ideas into practical functionality. My experience includes full-stack web platform development, as well as working with artificial intelligence and data analysis.\n' +
                     'At Infinitron, I contribute to the design and development of the software platform, from system architecture and technical planning to turning business requirements into practical features.\n' +
                     'To me, a good technology solution should be carefully designed, functional, and built to meet users’ real needs.\n',
-                photo: './team/stiven.webp',
+                photo: '/images/team/stiven.webp',
                 linkedin: '#',
                 email: 'stiven@infinitron.al',
             },
@@ -185,7 +185,7 @@ export const en = {
                 bio: 'Now in his fifth year of life, Lapo has decided to give working a try. Our chocolate Labrador joins Infinitron as Enthusiastic Officer with a clear brief: keep spirits high, stress levels low, and make sure everyone gets a proper welcome.\n' +
                     'An endless source of inspiration and stress relief, Lapo reminds us that even the biggest challenges feel more manageable after a little play and a good walk. He doesn’t write code or handle budgets, but he’s always happy to take the credit when the team is in a good mood.\n' +
                     'His salary is negotiated in treats. Belly rubs are part of the benefits package.\n',
-                photo: './team/lapo.webp',
+                photo: '/images/team/lapo.webp',
             }
 
         ] as TeamMember[],

@@ -1,5 +1,5 @@
 import type {ContactType, TeamMember} from "../types/types.ts";
-import {FaEnvelope, FaPhone} from "react-icons/fa";
+import {FaEnvelope, FaPhoneAlt} from "react-icons/fa";
 import {FaLocationDot} from "react-icons/fa6";
 
 
@@ -19,7 +19,7 @@ export const al = {
         line1: 'Teknologjia në shërbim të biznesit',
     },
     about : {
-        lead: 'Ndihmojmë bizneset t’i kthejnë sfidat e përditshme në mundësi përmes zgjidhjeve praktike teknologjike.',
+        lead: 'Në ndihmë të biznesit, për t’i kthyer sfidat e përditshme në mundësi.',
         paragraphs: [
             'Tek Infinitron, fillojmë duke kuptuar si funksionon biznesi juaj: njerëzit, proceset dhe marrëdhëniet që e mbajnë në lëvizje. Më pas zhvillojmë dhe integrojmë teknologji për të thjeshtuar punën, për të përmirësuar qarkullimin e informacionit dhe për të mbështetur vendimmarrjen.',
             'Fokusi ynë është që teknologjia të sjellë vlerë në punën e përditshme, nga përmirësimi i proceseve të brendshme te bashkëpunimi më i mirë mes bizneseve, furnitorëve dhe institucioneve financiare.',
@@ -129,7 +129,7 @@ export const al = {
                 title: 'Telefon',
                 recap: '+355 69 606 9500',
                 description: 'Na telefononi',
-                icon: FaPhone,
+                icon: FaPhoneAlt,
             },
         ] as ContactType[],
     },
@@ -145,7 +145,7 @@ export const al = {
                 bio: 'Përvoja ime në sipërmarrje, drejtim biznesi dhe sektorin publik më ka treguar se teknologjia merr vlerë të vërtetë kur u përgjigjet sfidave konkrete dhe hap rrugë të reja për zhvillim.\n' +
                     'Me Infinitron, synoj të ndërtoj një kompani që i ndihmon bizneset të punojnë më me efikasitet, të përmirësojnë proceset dhe të shfrytëzojnë potencialin që ofron teknologjia.\n' +
                     'Për mua, suksesi nuk qëndron vetëm te zgjidhja që krijojmë, por te ndryshimi që ajo sjell në mënyrën se si funksionon një biznes.\n',
-                photo: './team/ervis.webp',
+                photo: '/images/team/ervis.webp',
                 linkedin: '#',
                 email: 'ervis@infinitron.al',
             },
@@ -155,7 +155,7 @@ export const al = {
                 bio: 'Një ide e mirë ka nevojë për komunikimin e duhur që të kuptohet, të krijojë lidhje dhe të fitojë besim. Përvoja ime në media, komunikim publik dhe marketing digjital më ka ndihmuar të kuptoj se si një mesazh mund të kthehet në një identitet të dallueshëm.\n' +
                     'Në Infinitron, kujdesem që vizioni dhe zgjidhjet tona teknologjike të komunikohen në mënyrë të qartë, krijuese dhe të afërt me bizneset. Qëllimi im është të ndërtoj një komunikim që jo vetëm prezanton atë që bëjmë, por e bën të kuptueshme vlerën që sjellim.\n' +
                     'Sepse një markë e fortë nuk dallohet vetëm nga ajo që ofron, por edhe nga mënyra se si komunikon dhe lidh njerëzit me vizionin e saj.\n',
-                photo: './team/greta.webp',
+                photo: '/images/team/greta.webp',
                 linkedin: '#',
                 email: 'greta@infinitron.al',
             },
@@ -165,7 +165,7 @@ export const al = {
                 bio: 'Dizajni është më shumë sesa pamja vizuale: është mënyra se si një ide bëhet e kuptueshme dhe një përvojë digjitale funksionon natyrshëm. Formimi im në Menaxhim Komunikimi, me fokus në Branding, Reklama dhe Marrëdhënie me Publikun, në Universitetin e Wrocław-it në Poloni, si dhe përvojat akademike në Gjermani dhe Portugali, kanë formësuar qasjen time krijuese.\n' +
                     'Në punën time, ndërthur estetikën, strategjinë dhe funksionalitetin për të krijuar identitete vizuale dhe zgjidhje digjitale që i përgjigjen nevojave të përdoruesve.\n' +
                     'Rezultati që synoj është një teknologji që nuk është vetëm moderne në pamje, por edhe intuitive, e dobishme dhe e lehtë për t\'u përdorur.\n',
-                photo: './team/dejv.webp',
+                photo: '/images/team/dejv.webp',
                 linkedin: '#',
                 email: 'david@infinitron.al',
             },
@@ -175,7 +175,7 @@ export const al = {
                 bio: 'Më tërheq zhvillimi i softuerit dhe krijimi i zgjidhjeve digjitale që i kthejnë idetë në funksionalitete konkrete. Përvoja ime përfshin zhvillimin e platformave web full stack, si dhe punën me inteligjencën artificiale dhe analizën e të dhënave.\n' +
                     'Në Infinitron, kontribuoj në projektimin dhe zhvillimin e platformës softuerike, nga arkitektura e sistemit dhe planifikimi i zgjidhjeve teknike, deri te shndërrimi i kërkesave të biznesit në funksionalitete praktike.\n' +
                     'Për mua, një zgjidhje e mirë teknologjike duhet të jetë e menduar me kujdes, funksionale dhe e ndërtuar për t’iu përgjigjur nevojave reale të përdoruesve.\n',
-                photo: './team/stiven.webp',
+                photo: '/images/team/stiven.webp',
                 linkedin: '#',
                 email: 'stiven@infinitron.al',
             },
@@ -185,7 +185,7 @@ export const al = {
                 bio: 'Në vitin e pestë të jetës, Lapo ka vendosur të provojë edhe punën. Labradori ynë ngjyrë çokollate i bashkohet Infinitron si Enthusiastic Officer, me përgjegjësi të qarta: të mbajë entuziazmin lart, stresin poshtë dhe të mos lërë askënd pa përshëndetur.\n' +
                     'Një burim i pashtershëm frymëzimi dhe antistresi, Lapo na kujton se edhe sfidat më të mëdha përballohen më lehtë me pak lojë dhe një shëtitje. Nuk shkruan kod dhe nuk merret me buxhete, por është gjithmonë i gatshëm të marrë meritat kur ekipi ndihet mirë.\n' +
                     'Pagën e negocion në biskota. Përkëdheljet janë pjesë e paketës së përfitimeve.\n',
-                photo: './team/lapo.webp',
+                photo: '/images/team/lapo.webp',
             }
 
         ] as TeamMember[],
